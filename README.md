@@ -1,19 +1,17 @@
-
-# 🏠 California Housing Prices - Big Data Pipeline
-
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
-[![PySpark](https://img.shields.io/badge/PySpark-3.4.0-red)](https://spark.apache.org)
-[![Google Colab](https://img.shields.io/badge/Google%20Colab-Compatible-orange)](https://colab.research.google.com)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+🏠 Precios de la vivienda en California: Análisis de macrodatos
+Pitón
+PySpark
+Google Colab
+Licencia
 
 Un pipeline completo de Big Data para predicción de precios de viviendas en California utilizando PySpark, optimizaciones distribuidas y machine learning escalable.
 
-## 📊 Demo Rápido en Google Colab
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tu-usuario/california-housing-bigdata/blob/main/notebooks/04_pipeline_demo.ipynb)
+📊 Demostración Rápida en Google Colab
+Abrir en Colab
 
 ```bash
-# Ejecución inmediata en Colab
+
+Ejecución inmediata en Colab
 !pip install pyspark findspark
 !git clone https://github.com/tu-usuario/california-housing-bigdata.git
 %cd california-housing-bigdata
@@ -22,8 +20,8 @@ from src.main_pipeline import HousingPricePipeline
 pipeline = HousingPricePipeline()
 results = pipeline.run_complete_pipeline()
 
-# 🎯 Descripción del Proyecto
-Este proyecto implementa un pipeline de Big Data completo para predecir precios de viviendas en California utilizando el dataset público de Kaggle. El sistema demuestra mejores prácticas en procesamiento distribuido, optimización de performance y machine learning escalable con PySpark.
+🎯 Descripción del Proyecto
+Este proyecto implementa un pipeline de Big Data completo para predecir precios de viviendas en California utilizando el conjunto de datos público de Kaggle. El sistema demuestra mejores prácticas en procesamiento distribuido, optimización de rendimiento y aprendizaje automático escalable con PySpark.
 
 🚀 Características Principales
 📥 Ingesta Multi-fuente: Datos desde Kaggle API, URLs públicas y datos de ejemplo
@@ -32,85 +30,83 @@ Este proyecto implementa un pipeline de Big Data completo para predecir precios 
 
 ⚡ Optimizaciones Avanzadas: Caching estratégico, particionamiento, configuración Spark optimizada
 
-🤖 ML Distribuido: Random Forest con PySpark ML y feature engineering
+🤖 ML Distribuido: Random Forest con PySpark ML e ingeniería de funciones
 
 💾 Almacenamiento Eficiente: Parquet comprimido con particionamiento inteligente
 
-📊 Visualización Integral: Análisis exploratorio automático y métricas de performance
+📊 Visualización Integral: Análisis exploratorio automático y métricas de rendimiento
 
-
-# 🏗️ Arquitectura del Pipeline
+🏗️ Arquitectura del Oleoducto
 Diagrama de Flujo
 
 https://imgur.com/a/BP5wmym
 
-## Componentes Principales
-DataIngestion: Descarga y carga de datasets desde múltiples fuentes con resiliencia
+Componentes principales
+DataIngestion: Descarga y carga de conjuntos de datos desde Múltiples fuentes con resiliencia
 
-DataProcessor: Limpieza, validación y transformaciones con manejo de valores nulos
+Procesador de datos: Limpieza, validación y transformaciones con manejo de valores nulos
 
-FeatureEngineering: Creación de características derivadas y codificación categórica
+FeatureIngeniería: Creación de características derivadas y codificación categórica
 
 OptimizationManager: Técnicas de optimización distribuida (caching, particionamiento)
 
 ModelTrainer: Entrenamiento de modelos de ML con PySpark ML
 
 DataStorage: Almacenamiento eficiente en múltiples formatos con compresión
-# 📁 Estructura del Repositorio
 
+📁 Estructura del Repositorio
 california-housing-bigdata/
 │
-├── 📄 README.md                         # Este archivo
-├── 📋 requirements.txt                  # Dependencias del proyecto
+├── 📄 README.md # Este archivo
+├── 📋 requisitos.txt # Dependencias del proyecto
 ├── ⚙️ config/
-│   └── pipeline_config.yaml             # Configuraciones del pipeline
+│ └── pipeline config.yaml # Configuraciones del pipeline
 │
-├── 🐍 src/                              # Código fuente principal
-│   ├── __init__.py
-│   ├── data_ingestion.py                # Módulo de ingesta de datos
-│   ├── data_processing.py               # Procesamiento y limpieza
-│   ├── feature_engineering.py           # Ingeniería de características
-│   ├── data_storage.py                  # Almacenamiento optimizado
-│   ├── optimization.py                  # Técnicas de optimización
-│   ├── model_training.py                # Entrenamiento de modelos
-│   └── main_pipeline.py                 # Pipeline principal unificado
+├── 🐍 src/ # Código fuente principal
+│ ├── init .py
+│ ├── data ingestion.py # Módulo de ingesta de datos
+│ ├── data_processing.py # Procesamiento y limpieza
+│ ├── feature_engineering.py # Ingeniería de características
+│ ├── data_storage.py # Almacenamiento optimizado
+│ ├── optimización.py # Técnicas de optimización
+│ ├── model_training.py # Entrenamiento de modelos
+│ └── main_pipeline.py # Pipeline principal unificado
 │
-├── 📓 notebooks/                        # Jupyter notebooks
-│   ├── 01_data_exploration.ipynb        # Análisis exploratorio de datos
-│   ├── 02_feature_analysis.ipynb        # Análisis de características
-│   ├── 03_model_evaluation.ipynb        # Evaluación de modelos
-│   └── 04_pipeline_demo.ipynb           # Demo completo en Colab
+├── 📓 notebooks/ # Jupyter notebooks
+│ ├── 01_data_exploration.ipynb # Análisis exploratorio de datos
+│ ├── 02_feature_analysis.ipynb # Análisis de características
+│ ├── 03_model_evaluación.ipynb # Evaluación de modelos
+│ └── 04_pipeline_demo.ipynb # Demostración completa en Colab
 │
-├── 💾 data/                             # Datasets
-│   ├── raw/                             # Datos crudos
-│   ├── processed/                       # Datos procesados
-│   └── models/                          # Modelos entrenados
+├── 💾 data/ # Datasets
+│ ├── raw/ # Datos crudos
+│ ├── procesados/ # Datos procesados
+​​│ └── models/ # Modelos entrenados
 │
-├── ✅ tests/                            # Tests automatizados
-│   ├── __init__.py
-│   ├── test_data_processing.py          # Tests de procesamiento
-│   ├── test_feature_engineering.py      # Tests de ingeniería
-│   └── test_optimization.py             # Tests de optimización
+├── ✅ tests/ # Tests automatizados
+│ ├── __init .py
+│ ├── test_data_processing.py # Pruebas de procesamiento
+│ ├── test_feature_engineering.py # Pruebas de ingeniería
+│ └── test_optimization.py # Pruebas de optimización
 │
-├── 📊 docs/                             # Documentación
-│   ├── architecture_diagrams/           # Diagramas de arquitectura
-│   ├── technical_report.pdf             # Informe técnico completo
-│   └── api_documentation.md             # Documentación de API
+├── 📊 docs/ #Documentación
+│ ├── Architecture_diagrams/ # Diagramas de arquitectura
+│ ├──technical_report.pdf # Informe técnico completo
+│ └── api_documentation.md # Documentación de API
 │
-└── 🔧 scripts/                          # Scripts de utilidad
-    ├── setup_environment.sh             # Configuración de entorno
-    ├── run_pipeline.py                  # Ejecución del pipeline
-    └── benchmark_performance.py         # Benchmark de rendimiento
+└── 🔧 scripts/ # Scripts de utilidad
+├── setup_environment.sh # Configuración de entorno
+├── run_pipeline.py # Ejecución del pipeline
+└── benchmark_performance.py # Benchmark de rendimiento
 
-#  🚀 Instalación Rápida
-
-##Opción 1: Google Colab (Recomendado)
-# Instalación en Google Colab - Ejecutar en una celda
+🚀 Instalación rápida
+Opción 1: Google Colab (Recomendado)
+Instalación en Google Colab - Ejecutar en una celda
 !pip install pyspark==3.4.0 findspark pandas matplotlib seaborn requests
 !git clone https://github.com/tu-usuario/california-housing-bigdata.git
 %cd california-housing-bigdata
 
-# Importar y ejecutar
+Importante y ejecutar
 import findspark
 findspark.init()
 
@@ -118,244 +114,262 @@ from src.main_pipeline import HousingPricePipeline
 pipeline = HousingPricePipeline()
 results = pipeline.run_complete_pipeline()
 
-# Opción 2: Entorno Local
-# 1. Clonar repositorio
+Opción 2: Entorno Local
+1. Clonar repositorio
 git clone https://github.com/tu-usuario/california-housing-bigdata.git
 cd california-housing-bigdata
 
-# 2. Crear entorno virtual (opcional pero recomendado)
+2. Crear un entorno virtual (opcional pero recomendado)
 python -m venv housing_env
-source housing_env/bin/activate  # Linux/Mac
-# housing_env\Scripts\activate  # Windows
+source housing_env/bin/activate # Linux/Mac
 
-# 3. Instalar dependencias
+housing_env\Scripts\activate # Windows
+3. Instalar dependencias
 pip install -r requirements.txt
 
-# 4. Verificar instalación
-python -c "from src.main_pipeline import HousingPricePipeline; print('✅ Instalación exitosa')"
-# Prerrequisitos
-### Python 3.8+
-### Java 8/11 (requerido para PySpark)
-### 4GB+ RAM recomendado para procesamiento eficiente
-###Google Colab o entorno local con las dependencias instaladas
-# 💻 Uso del Pipeline
-## Ejecución Completa Automática
+4. Verificar instalación
+python -c “from src.main_pipeline import HousingPricePipeline; print('✅ Instalación exitosa')”
+
+Prerrequisitos
+Python 3.8+
+Java 8/11 (requerido para PySpark)
+4 GB+ de RAM recomendados para un procesamiento eficiente
+Google Colab o entorno local con las dependencias instaladas
+💻 Uso del Pipeline
+Ejecución Completa Automática
 from src.main_pipeline import HousingPricePipeline
 
-# Pipeline completo automático
+Pipeline completo automático
 pipeline = HousingPricePipeline()
-final_data, trained_model, performance_metrics = pipeline.run_complete_pipeline()
+datos_finales, modelo_entrenado, métricas_de_rendimiento = pipeline.run_complete_pipeline()
 
-# Resultados automáticamente generados
-print(f"✅ Pipeline completado: {final_data.count()} registros procesados")
-print(f"📊 Métricas: {performance_metrics}")
-# Ejecución por Módulos Individuales
-# Ingesta específica
+Resultados generados automáticamente
+print(f”✅ Pipeline completado: {final_data.count()} registros procesados”)
+print(f”📊 Métricas: { Performance_metrics}”)
+
+Ejecución por Módulos Individuales
+Ingesta específica
 from src.data_ingestion import DataIngestion
 ingestion = DataIngestion()
 raw_data = ingestion.download_kaggle_dataset()
 
-# Procesamiento personalizado
+Procesamiento personalizado
 from src.data_processing import DataProcessor
 processor = DataProcessor(spark)
 cleaned_data = processor.clean_data(raw_data)
 
-# Feature engineering avanzado
-featured_data = processor.feature_engineering(cleaned_data)
+Ingeniería de características
+datos_destacados = procesador.ingeniería_de_características(datos_limpios)
 
-# Entrenamiento de modelo
-from src.model_training import ModelTrainer
-trainer = ModelTrainer(spark)
-model, predictions = trainer.train_model(featured_data)
-# Scripts de Línea de Comandos
-# Ejecutar pipeline completo
-python scripts/run_pipeline.py
+Entrenamiento de modelo
+de src.model_training importar ModelTrainer
+entrenador = modelo ModelTrainer (spark)
+, predicciones = entrenador.train_model (featured_data)
 
-# Solo benchmarking de performance
-python scripts/benchmark_performance.py
+Scripts de Línea de Comandos
+Ejecutar pipeline completo
+scripts de Python/run_pipeline.py
 
-# Ejecutar tests unitarios
+Evaluación comparativa individual del rendimiento
+scripts de Python/benchmark_performance.py
+
+Ejecutar pruebas unitarias
 python -m pytest tests/ -v
 
-# Ejecutar con configuración personalizada
-python scripts/run_pipeline.py --config config/custom_config.yaml
-# ⚡ Optimizaciones Implementadas
-## Técnicas de Performance
+Ejecutar con configuración personalizada
+scripts de Python/run_pipeline.py —config config/custom_config.yaml
 
-Técnica	Mejora	Impacto
-Caching Estratégico	35%	Tiempo de procesamiento
-Particionamiento Inteligente	40%	Consultas filtradas
-Configuración Spark Adaptativa	25%	Uso de memoria y CPU
-Compresión Snappy	60%	Almacenamiento en disco
-Predicate Pushdown	30%	Operaciones de filtrado
-# Configuración Spark Optimizada
-# Configuraciones críticas aplicadas
+⚡ Optimizaciones implementadas
+Técnicas de Performance
+Técnica Mejora Impacto
+Caching Estratégico 35% Tiempo de procesamiento
+Particionamiento Inteligente 40% Consultas filtradas
+Configuración Spark Adaptativa 25% Uso de memoria y CPU
+Compresión Snappy 60% Almacenamiento en disco
+Predicate Pushdown 30% Operaciones de filtrado
+
+Configuración optimizada de Spark
+Configuraciones críticas aplicadas
 spark.conf.set("spark.sql.adaptive.enabled", "true")
-spark.conf.set("spark.sql.adaptive.coalescePartitions.enabled", "true") 
+spark.conf.set("spark.sql.adaptive.coalescePartitions.enabled", "true")
 spark.conf.set("spark.sql.adaptive.skew.enabled", "true")
 spark.conf.set("spark.sql.autoBroadcastJoinThreshold", "10485760")
 spark.conf.set("spark.sql.shuffle.partitions", "100")
-# 📊 Resultados y Métricas
-## Performance del Modelo
-Métrica	Valor	Mejora vs Baseline
-R² Score	0.81	+15%
-RMSE	$48,250	-22%
-MAE	$35,120	-18%
-Tiempo Entrenamiento	28.7s	-36.5%
-# Características Más Importantes
-median_income (28.5%) - Factor más predictivo
+
+📊 Resultados y Métricas
+Rendimiento del modelo
+Métrica Valor Mejora vs Baseline
+R² Puntuación 0,81 +15%
+RMSE $48.250 -22%
+MAE $35.120 -18%
+Tiempo Entrenamiento 28,7s -36,5%
+
+Características más importantes
+ingreso_mediano (28,5%) - Factor más predictivo
 
 ocean_proximity_index (15.2%) - Ubicación costera
 
-latitude (12.8%) - Ubicación geográfica
+latitud (12.8%) - Ubicación geográfica
 
-rooms_per_household (9.5%) - Densidad habitacional
+habitaciones_por_hogar (9.5%) - Densidad habitacional
 
-housing_median_age (8.1%) - Antigüedad de viviendas
-# Benchmark de Rendimiento
-Operación	Original	Optimizado	Mejora
-Count total	2.3s	1.4s	39.1%
-Filter por precio	1.8s	0.9s	50.0%
-Group by ubicación	3.2s	1.7s	46.9%
-Model training	45.2s	28.7s	36.5%
-# 🔧 Configuración Avanzada
-## Archivo de Configuración Principal
-### Editar config/pipeline_config.yaml:
-# Spark Configuration
+edad_mediana_vivienda (8.1%) - Antigüedad de viviendas
+
+Benchmark de rendimiento
+Operación Original Optimizado Mejora
+Conteo total 2.3s 1.4s 39.1%
+Filtrar por precio 1.8s 0.9s 50.0%
+Agrupar por ubicación 3.2s 1.7s 46.9%
+Entrenamiento de modelo 45.2s 28.7s 36.5%
+
+🔧 Configuración avanzada
+Archivo de configuración principal
+Edita config/pipeline_config.yaml:
+Configuración de Spark
 spark_config:
-  app_name: "CaliforniaHousingPipeline"
-  executor_memory: "2g"
-  driver_memory: "1g"
-  sql_adaptive_enabled: true
-  shuffle_partitions: 100
+app_name: “CaliforniaHousingPipeline”
+executor_memory: “2g”
+driver_memory: “1g”
+sql_adaptive_enabled: true
+shuffle_partitions: 100
 
-# Model Parameters
-model:
-  algorithm: "random_forest"
-  parameters:
-    num_trees: 100
-    max_depth: 10
-    seed: 42
+Parámetros del modelo
+modelo:
+algoritmo: “random_forest”
+parámetros:
+num_trees: 100
+profundidad_máxima: 10
+semilla: 42
 
-# Feature Engineering
-feature_engineering:
-  derived_features:
-    - "rooms_per_household"
-    - "bedrooms_per_room"
-    - "population_per_household"
-    - "income_per_household"
+Ingeniería de características
+ingeniería_de_características:
+características_derivadas:
 
-# Storage Settings
-storage:
-  primary_format: "parquet"
-  compression: "snappy"
-  partition_columns: ["price_range"]
-#   Variables de Entorno
-###### Configurar para entorno local
-export SPARK_HOME=/path/to/spark
+- "rooms_per_household"
+- "bedrooms_per_room"
+- "population_per_household"
+- "income_per_household"
+Configuración de almacenamiento
+almacenamiento:
+formato_primario: “parquet”
+compresión: “snappy”
+columnas_de_partición: [“rango_de_precios”]
+
+Variables de Entorno
+Configurar para entorno local
+export SPARK_HOME=/ruta/a/spark
 export PYSPARK_PYTHON=python3
-export JAVA_HOME=/path/to/java
+export JAVA_HOME=/ruta/a/java
 
-###### Para Google Colab, se configuran automáticamente
-# 🧪 Testing y Calidad de Código
-## Ejecución de Tests
-######Tests unitarios
+Para Google Colab, se configura automáticamente
+🧪 Pruebas y Calidad de Código
+Ejecución de Tests
+Pruebas unitarias
 python -m pytest tests/ -v
 
-######  Tests con cobertura
-python -m pytest tests/ --cov=src --cov-report=html
+Pruebas con cobertura
+python -m pruebas pytest/ —cov=src —cov-report=html
 
-###### Tests específicos
+Pruebas específicas
 python -m pytest tests/test_data_processing.py -v
-# Verificación de Calidad
-###### Formateo de código
-black src/ tests/
 
-###### Linting
-flake8 src/ tests/
+Verificación de Calidad
+Formato de código
+negro src/ pruebas/
 
-###### Verificación de tipos (opcional)
+Pelusa
+flake8 src/ pruebas/
+
+Verificación de tipos (opcional)
 mypy src/
-# 📈 Dataset y Fuentes de Datos
-## California Housing Prices
-Fuente: Kaggle Dataset
 
-Registros: 20,640 propiedades
+📈 Conjunto de datos y fuentes de datos
+Precios de la vivienda en California
+Fuente: Conjunto de datos de Kaggle
+
+Registros: 20.640 propiedades
 
 Características: 10 variables iniciales
 
 Período: Datos censales de California
-## Variables Principales
-longitude, latitude: Coordenadas geográficas
+
+Variables Principales
+longitud, latitud: Coordenadas geográficas
 
 housing_median_age: Edad media de las viviendas
 
-total_rooms, total_bedrooms: Capacidad habitacional
+total_habitaciones, total_dormitorios: Capacidad habitacional
 
-population, households: Datos demográficos
+población, hogares: Datos demográficos
 
-median_income: Ingreso medio de hogares
+mediana_ingresos: Ingreso medio de hogares
 
 median_house_value: Variable objetivo (precio)
 
-ocean_proximity: Categórica de ubicación costera
-# 🤝 Contribución
+ocean_proximity: Categoría de ubicación costera
+
+🤝 Contribución
 ¡Contribuciones son bienvenidas! Por favor sigue estos pasos:
 Fork el proyecto
 
 Crea una rama para tu feature (git checkout -b feature/AmazingFeature)
 
-Commit tus cambios (git commit -m 'Add AmazingFeature')
+Confirma tus cambios (git commit -m 'Add AmazingFeature')
 
 Push a la rama (git push origin feature/AmazingFeature)
 
-Abre un Pull Request
-# Guía de Desarrollo
-# 1. Clonar y configurar
+Abre una solicitud de extracción
+
+Guía de Desarrollo
+1. Clonar y configurar
 git clone https://github.com/tu-usuario/california-housing-bigdata.git
 cd california-housing-bigdata
 
-###### 2. Instalar dependencias de desarrollo
+2. Instalar dependencias de desarrollo
 pip install -r requirements-dev.txt
 
-###### 3. Configurar pre-commit hooks
-pre-commit install
+3. Configurar los ganchos de pre-commit
+instalación previa a la confirmación
 
-###### 4. Desarrollar y testear
-python -m pytest tests/ --cov=src --cov-report=html
-## Estándares de Código
+4. Desarrollar y testear
+python -m pruebas pytest/ —cov=src —cov-report=html
+
+Estándares de Código
 Seguir PEP 8 para código Python
 
 Usar docstrings para documentación de funciones
 
-Incluir tests para nuevas funcionalidades
+Incluir pruebas para nuevas funcionalidades.
 
 Mantener cobertura de código > 80%
 
-Actualizar documentación correspondiente
-# 🐛 Solución de Problemas
-## Problemas Comunes
-### Error de memoria en Colab
+Actualizar la documentación correspondiente
 
-###### Solución: Reducir tamaño de datos o particiones
+🐛 Solución de Problemas
+Problemas comunes
+Error de memoria en Colab
+Solución: Reducir el tamaño de datos o particiones
 spark.conf.set("spark.sql.shuffle.partitions", "50")
 spark.conf.set("spark.driver.memory", "1g")
-### Dependencias faltantes
-###### Reinstalar dependencias
-pip install --force-reinstall -r requirements.txt
-### Problemas con Java
 
-bash
-###### Verificar instalación de Java
-java -version
-# Debugging
-###### Habilitar logging detallado
+Dependencias faltantes
+Reinstalar dependencias
+pip install --force-reinstall -r requirements.txt
+
+Problema con Java
+intento
+
+Verificar instalación de Java
+java -versión
+
+Depuración
+Habilitar logging detallado
 import logging
 logging.basicConfig(level=logging.INFO)
 
-###### Verificar estadísticas de datos
+Verificar estadísticas de datos
 df.describe().show()
 df.printSchema()
 
-###### Monitorear uso de memoria
-###### df.cache().count()  Forzar caching y ver memoria
+Monitorear uso de memoria
+df.cache().count() Forzar el almacenamiento en caché y la memoria
