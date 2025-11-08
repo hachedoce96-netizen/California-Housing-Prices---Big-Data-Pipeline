@@ -1,6 +1,7 @@
 
-🏠 Repositorio: California Housing Prices - Big Data Pipeline
-📁 Estructura del Repositorio
+# 🏠 Repositorio: California Housing Prices - Big Data Pipeline
+# 📁 Estructura del Repositorio
+
 
 california-housing-bigdata/
 │
