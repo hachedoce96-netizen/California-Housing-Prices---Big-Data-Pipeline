@@ -3,49 +3,7 @@
 # 📁 Estructura del Repositorio
 
 
-california-housing-bigdata/
-│
-├── 📄 README.md                          # Documentación principal
-├── 📋 requirements.txt                   # Dependencias del proyecto
-├── ⚙️  config/
-│   └── pipeline_config.yaml              # Configuraciones del pipeline
-│
-├── 🐍 src/
-│   ├── __init__.py
-│   ├── data_ingestion.py                 # Módulo de ingesta de datos
-│   ├── data_processing.py               # Procesamiento y limpieza
-│   ├── feature_engineering.py           # Ingeniería de características
-│   ├── data_storage.py                  # Almacenamiento optimizado
-│   ├── optimization.py                  # Técnicas de optimización
-│   ├── model_training.py                # Entrenamiento de modelos
-│   └── main_pipeline.py                 # Pipeline principal
-│
-├── 📓 notebooks/
-│   ├── 01_data_exploration.ipynb        # Análisis exploratorio
-│   ├── 02_feature_analysis.ipynb        # Análisis de características
-│   ├── 03_model_evaluation.ipynb        # Evaluación de modelos
-│   └── 04_pipeline_demo.ipynb           # Demo completo en Colab
-│
-├── 💾 data/
-│   ├── raw/                             # Datos crudos
-│   ├── processed/                       # Datos procesados
-│   └── models/                          # Modelos entrenados
-│
-├── ✅ tests/
-│   ├── __init__.py
-│   ├── test_data_processing.py          # Tests de procesamiento
-│   ├── test_feature_engineering.py      # Tests de ingeniería
-│   └── test_optimization.py             # Tests de optimización
-│
-├── 📊 docs/
-│   ├── architecture_diagrams/           # Diagramas de arquitectura
-│   ├── technical_report.pdf             # Informe técnico completo
-│   └── api_documentation.md             # Documentación de API
-│
-└── 🔧 scripts/
-    ├── setup_environment.sh             # Script de configuración
-    ├── run_pipeline.py                  # Ejecución del pipeline
-    └── benchmark_performance.py         # Benchmark de rendimiento
+
 
 # 📄 README.md
 # 🏠 California Housing Prices - Big Data Pipeline
