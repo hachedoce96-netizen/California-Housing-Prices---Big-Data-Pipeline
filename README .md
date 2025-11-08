@@ -47,7 +47,7 @@ california-housing-bigdata/
     ├── run_pipeline.py                  # Ejecución del pipeline
     └── benchmark_performance.py         # Benchmark de rendimiento
 
-📄 README.md
+# 📄 README.md
 # 🏠 California Housing Prices - Big Data Pipeline
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
@@ -151,8 +151,8 @@ findspark==2.0.0
 pyyaml==6.0
 
 
-💻 Ejecución del Proyecto
-Opción 1: Pipeline Completo en Colab
+# 💻 Ejecución del Proyecto
+### Opción 1: Pipeline Completo en Colab
 
 # En Google Colab
 from src.main_pipeline import HousingPricePipeline
